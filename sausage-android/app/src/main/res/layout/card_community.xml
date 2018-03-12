@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/round_button"
+    tools:ignore="MissingPrefix"
+    android:layout_marginTop="13dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/communityImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/profile_default"
+        />
+
+    <TextView
+        fontPath="fonts/Spoqa Han Sans Bold.ttf"
+        android:id="@+id/communityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="호식이 두마리치킨 성추행 불매운동"
+        android:lineSpacingExtra="8sp"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="61dp"
+        android:layout_marginStart="15dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/communityDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="6sp"
+        android:text="20대 여직원을 불러서 저녁을 먹자고 하다가 강제로 호텔로 데려가려 했던 사건이지요. 사건발생 초기에는 꽃뱀이냐, 아니면…"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="87dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="21dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/communityDescription"
+        android:layout_marginTop="11dp"
+        android:layout_marginStart="15dp"
+        />
+
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape"
+        app:layout_constraintTop_toBottomOf="@+id/communityDescription"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="86dp"
+        android:background="@null"
+        />
+
+    <TextView
+        android:id="@+id/upTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/communityDescription"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="65dp"
+        android:text="55"
+        android:textColor="#000000"
+        />
+
+    <ImageButton
+        android:id="@+id/downButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/communityDescription"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="37dp"
+        android:background="@null"
+        android:src="@drawable/shape_copy"
+        />
+
+    <TextView
+        android:id="@+id/downTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/communityDescription"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:text="17"
+        android:textColor="#000000"
+        />
+
+
+
+    <View
+        android:id="@+id/communityView"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#b3cccccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/communityReviewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lanWheeler"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/communityView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="15dp"
+        android:textColor="#000000"
+
+        />
+
+    <TextView
+        android:id="@+id/communityReviewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앞으로 절대로 이용하고 싶지않습니다."
+        app:layout_constraintLeft_toRightOf="@+id/communityReviewId"
+        app:layout_constraintTop_toBottomOf="@+id/communityView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:textColor="#000000"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<div id="home-index">
+  <nav class="_navbar _vcenter-positioner">
+    <div class="_flex-grow-1">
+      <%= link_to home_index_path do %>
+          <%= image_tag "logo_sausage", class: "logo-img" %>
+      <% end %>
+    </div>
+
+    <%= link_to "소개", home_index_path(anchor: "intro"), class: "nav-text _fs-4 _white" %>
+    <%= link_to "서비스", home_index_path(anchor: "service"), class: "nav-text _fs-4 _white" %>
+    <%= link_to "다운로드", home_index_path(anchor: "download"), class: "nav-text _fs-4 _white" %>
+  </nav>
+
+  <div class="header-container _vcenter-positioner">
+    <div class="_full-positioner">
+      <%= image_tag "background_sausage.jpg", class: "background-img" %>
+    </div>
+    <div class="_filter _full-positioner"></div>
+
+    <div class="header-box _column-positioner _vcenter-positioner
+      _hcenter-positioner">
+      <div class="_text-center _z-index-front">
+        <%= simple_format @copyCat, class: "_fs-title _white _f-line-narrow" %>
+      </div>
+
+      <div class="header-icon-box _vbottom-positioner">
+        <%= link_to @appstore, class: "icon-margin" do %>
+            <%= image_tag "icon_google_play", class: "_store-icon" %>
+        <% end %>
+        <%= link_to "", class: "filter-container icon-margin" do %>
+            <%= image_tag "icon_appstore", class: "_store-icon" %>
+            <div class="button-filter _full-positioner _vcenter-positioner _hcenter-positioner">
+              <p class="_fs-4 _white">준비중입니다</p>
+            </div>
+        <% end %>
+      </div>
+    </div>
+    <!--소세지가 뭔가요?-->
+  </div>
+
+  <div class="intro-container _hcenter-positioner" id="intro">
+    <div class="content-box _vcenter-positioner">
+      <%= image_tag "image_phone.png", class: "phone-img" %>
+      <div class="intro-text">
+        <p class="_fs-2 _black">왜 우리는 항상 먹거리때문에<br>불안에 떨어야하나요?</p>
+        <%= simple_format @intro, class: "_fs-4 _dark-gray" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-container _hcenter-positioner" id="service">
+    <div class="content-box">
+      <div class="_vcenter-positioner _hcenter-positioner _no-p-margin">
+        <p class="_fs-3 _white">당신이</p>
+        <%= image_tag "logo_sausage", class: "logo-img" %>
+        <p class="_fs-3 _white">에서 할 수 있는 일</p>
+      </div>
+      <div class="service-circle-group _hcenter-positioner">
+        <div class="service-circle _text-center">
+          <%= image_tag "circle_news", class: "circle-img" %>
+          <p class="_fs-4 _white">최신 이슈 받아보기</p>
+          <%= simple_format @service[0], class: "_fs-5 _light-gray" %>
+        </div>
+        <div class="service-circle _text-center">
+          <%= image_tag "circle_community", class: "circle-img" %>
+          <p class="_fs-4 _white">사람들과 정보 공유하기</p>
+          <%= simple_format @service[1], class: "_fs-5 _light-gray" %>
+        </div>
+        <div class="service-circle _text-center">
+          <%= image_tag "circle_company", class: "circle-img" %>
+          <p class="_fs-4 _white">기업점수 보기</p>
+          <%= simple_format @service[2], class: "_fs-5 _light-gray" %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="download-container _hcenter-positioner" id="download">
+    <div class="content-box">
+      <div class="_vcenter-positioner _hcenter-positioner _no-p-margin">
+        <p class="_fs-3 _black">지금 소세지를 시작해보세요!</p>
+      </div>
+      <div class="download-text _text-center _no-p-margin">
+        <%= simple_format @download, class: "_fs-4 _dark-gray _f-line-narrow" %>
+      </div>
+
+      <div class="download-icon-box _hcenter-positioner">
+        <%= link_to @appstore do %>
+            <%= image_tag "icon_google_play", class: "_store-icon" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <footer class="_footer _vcenter-positioner">
+    <%= image_tag "background_sausage2.jpg", class: "background-img" %>
+    <p class="_fs-5 _white">@소세지 in 박근핵 해커톤 | 원지운, 조영제, 류혜진, 박근우, ChaeF</p>
+  </footer>
+</div>

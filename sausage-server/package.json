@@ -1,0 +1,33 @@
+{
+  "name": "sausage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "compression": "^1.7.0",
+    "cron": "^1.2.1",
+    "dotenv": "^4.0.0",
+    "fcm-push": "^1.1.2",
+    "firebase": "^4.3.0",
+    "helmet": "^3.8.1",
+    "iconv": "^2.3.0",
+    "md5": "^2.2.1",
+    "moment": "^2.18.1",
+    "phantom": "^4.0.5",
+    "ramda": "^0.24.1",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.1.32",
+    "@types/request-promise-native": "^1.0.6"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

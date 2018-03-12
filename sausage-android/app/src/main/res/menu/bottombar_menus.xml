@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_report"
+        android:icon="@drawable/icon_02"
+        android:title="기사" />
+    <item
+        android:id="@+id/menu_community"
+        android:icon="@drawable/icon_01"
+        android:title="커뮤니티" />
+    <item
+        android:id="@+id/menu_blacklist"
+        android:icon="@drawable/icon_03"
+        android:title="악덕기업" />
+    <item
+        android:id="@+id/menu_product"
+        android:icon="@drawable/icon_04"
+        android:title="불량제품" />
+</menu>

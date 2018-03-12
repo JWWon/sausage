@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#29b6f6"
+    tools:ignore="MissingPrefix"
+    tools:context="com.gunghi.tgwing.sausage.activity.GoogleSignInActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/logo_02_02"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/invalid_name"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="265dp"
+        android:src="@drawable/signin"
+        />
+
+    <ImageButton
+        android:id="@+id/signInImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="370dp"
+        android:src="@drawable/rectangle_5"
+        android:background="@null"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="15sp"
+        android:textColor="#29b6f6"
+        app:layout_constraintLeft_toLeftOf="@+id/signInImageButton"
+        app:layout_constraintRight_toRightOf="@+id/signInImageButton"
+        app:layout_constraintTop_toTopOf="@+id/signInImageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/signInImageButton"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/signInImageButton"
+        app:layout_constraintRight_toRightOf="@+id/signInImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/signInImageButton"
+        app:layout_constraintBottom_toTopOf="@+id/googleSignInButton"
+
+        />
+
+    <ImageButton
+        android:id="@+id/googleSignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/sign_in_with_google"
+        app:layout_constraintLeft_toLeftOf="@+id/signInImageButton"
+        app:layout_constraintRight_toRightOf="@+id/signInImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/signInImageButton"
+        android:layout_marginTop="35dp"
+        android:onClick="onClickSignInButton"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

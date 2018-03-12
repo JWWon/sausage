@@ -1,0 +1,34 @@
+$white: #ffffff;
+$black: #000000;
+$dark-gray: #313131;
+$gray: #7b7b7b;
+$light-gray: #d8d8d8;
+$blue: #29B6F6;
+
+svg {
+  fill: $white;
+}
+
+._white {
+  color: $white;
+}
+
+._black {
+  color: $black;
+}
+
+._dark-gray {
+  color: $dark-gray;
+}
+
+._gray {
+  color: $gray;
+}
+
+._light-gray {
+  color: $light-gray;
+}
+
+._blue {
+  color: $blue;
+}

@@ -1,0 +1,61 @@
+//spoqa
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+//배달의민족
+//@font-face {
+//    font-family: 'BM DOHYEON';
+//    src: url('assets/fonts/BMDOHYEON_ttf.ttf') format('truetype'),
+//    url('assets/fonts/BMDOHYEON_otf.otf');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+//desktop fonts
+@mixin font-family {
+  font-family : 'Spoqa Han Sans', sans-serif;
+}
+._fs-title {
+  //font-family : 'BM DOHYEON', sans-serif;
+  @include font-family;
+  font-size: 3rem;
+}
+
+._fs-1 {
+  @include font-family;
+  font-size: 2.6rem;
+}
+
+._fs-2 {
+  @include font-family;
+  font-size: 2rem;
+}
+
+._fs-3 {
+  @include font-family;
+  font-size: 1.6rem;
+}
+
+._fs-4 {
+  @include font-family;
+  font-size: 1.2rem;
+}
+
+._fs-5 {
+  @include font-family;
+  font-size: 1rem;
+}
+
+._f-line-wide {
+  line-height: 220%;
+}
+
+._f-line-narrow {
+  line-height: 170%;
+}

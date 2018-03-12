@@ -1,0 +1,210 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+@import "colors";
+@import "size";
+
+//utils
+._filter {
+  background: rgba(0, 0, 0, .3);
+  border: none;
+}
+
+._flex-grow-1 {
+  @include flex-grow(1);
+}
+
+._no-p-margin {
+  p { margin: 0; }
+}
+
+//positioners
+._hcenter-positioner {
+  @include display-flex;
+  width: 100%;
+  //@include flex-direction(row);
+  /* align horizontal */
+  @include justify-content(center);
+}
+
+._hright-positioner {
+  @include display-flex;
+  @include justify-content(flex-end);
+}
+
+._column-positioner {
+  /* column direction */
+  @include flex-direction(column);
+}
+
+._vcenter-positioner {
+  @include display-flex;
+  //@include flex-direction(row);
+  /* align vertical */
+  @include align-items(center);
+}
+
+._vbottom-positioner {
+  @include display-flex;
+  @include align-items(flex-end);
+}
+
+._row-positioner {
+  @include display-flex;
+  @include flex-direction(row);
+}
+
+._full-positioner {
+  position: absolute;
+  @include position(0);
+}
+
+._z-index-front {
+  z-index: 5;
+}
+
+._text-center {
+  text-align: center;
+}
+
+//icons
+._icon-small {
+  @include size(auto, 1rem);
+  object-fit: contain;
+}
+
+//elements
+._navbar,
+.service-container {
+  .logo-img {
+    @include size(auto, 2.5rem);
+  }
+}
+
+._navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: $navbar-height;
+  padding: 0 4rem;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99;
+  @include transition(background 300ms);
+
+  .nav-text {
+    padding: 0 1rem;
+  }
+}
+
+#home-index {
+  position: absolute;
+  @include position(0);
+
+  .header-container {
+    position: relative;
+    top: 0; left: 0; right: 0;
+    height: $header-height;
+    padding: 0 4rem;
+  }
+
+  .background-img {
+    position: fixed;
+    @include size(100%, $header-height);
+    @include filter(blur(4px));
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .header-box {
+    padding: $navbar-height 0 0;
+    @include size(100%);
+
+    ._fs-title {
+      font-weight: bold;
+    }
+  }
+  .header-icon-box {
+    z-index: 5;
+    margin: 1rem 0 0;
+
+    .icon-margin {
+      margin: 0 1.5rem;
+    }
+
+    .filter-container {
+      position: relative;
+    }
+    .button-filter {
+      @include size(100%, 3.5rem);
+      background: rgba(0, 0, 0, .6);
+      @include border-radius(.4rem);
+    }
+  }
+
+  ._store-icon {
+    @include size(auto, 3.5rem);
+  }
+
+  .intro-container {
+    padding: $container-ph 0;
+    background: $white;
+    .phone-img {
+      @include size(auto, 36rem);
+    }
+
+    .intro-box {
+      @include size($container-width, auto);
+    }
+
+    .intro-text {
+      padding: 0 0 0 8rem;
+    }
+  }
+
+  .content-box {
+    @include size($container-width, auto);
+  }
+
+  .service-container {
+    padding: $container-ph 0;
+    background: $blue;
+    .logo-img {
+      margin: 0 1rem;
+    }
+    .service-circle-group {
+      margin: 4rem 0 0;
+    }
+    .service-circle {
+      margin: 0 -1rem;
+      .circle-img {
+        @include size(18rem, auto);
+      }
+    }
+  }
+
+  .download-container {
+    padding: $container-ph 0;
+    background: $white;
+    .download-text {
+      padding: 4rem 0 0;
+    }
+
+    .download-icon-box {
+      margin: 4rem 0 0;
+    }
+  }
+
+  ._footer {
+    position: relative;
+    @include size(auto, $footer-height);
+    padding: 2rem 4rem;
+
+    .background-img {
+      position: absolute;
+      @include position(0);
+      @include size(100%, $footer-height + 2*2rem);
+      @include filter(blur(4px));
+      object-fit: cover;
+    }
+  }
+}
